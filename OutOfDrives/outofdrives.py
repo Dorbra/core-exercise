@@ -13,10 +13,7 @@ def find_drives():
                     count += 1
 
                     # specifialy for getting drive_name
-                    drive_name = row[0].split(':', 1)[-1]
-                    drive_name = drive_name.strip()
-                    drive_name = drive_name.split(' ', 1)
-                    print('{key}: {value}'.format(key=drive_name[0], value=drive_name[1]))
+                    get_drive_name(row)
 
                     for i in range(2, len(row)):
                        adapted_row = row[i].strip()
@@ -29,6 +26,12 @@ def find_drives():
         print("ERROR! Couldn't open file to read:\nplease make sure correct file ('input.txt') is on same base folder")
 
     return count
+
+def get_drive_name(row):
+    drive_name = row[0].split(':', 1)[-1]
+    drive_name = drive_name.strip()
+    drive_name = drive_name.split(' ', 1)
+    print('{key}: {value}'.format(key=drive_name[0], value=drive_name[1]))
 
 if __name__ == "__main__":
     OFFLINE_DEVICES = find_drives()
