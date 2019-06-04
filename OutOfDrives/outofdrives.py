@@ -26,6 +26,7 @@ def find_drives():
 
     return count
 
+# manipulating drive's name:
 def get_drive_name(row):
     drive_name = row[0].split(':', 1)[-1]
     drive_name = drive_name.strip()
