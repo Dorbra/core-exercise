@@ -12,8 +12,8 @@ Dependencies:
 *ipinfo* Python library - Can be done using only 'requests' ofcourse, but used for sake of mixture and simpler coordinates.
 *requests - http/api requests.
 
-- First creating Ip class and initiating setup, getting IP to specific request, bringing back country,city and coors.
-- Calling OpenWeather API with params, requesting weather using coordinates for better accuracy, in C'.
+- First calling 'ipinfo' api, bringing back to Ip class params (and coors).
+- Calling OpenWeather API with Ip params, requesting weather using coordinates for better accuracy, in C'.
 
 **Instructions:** run via terminal/cmd using 'python outrain.py'
 
