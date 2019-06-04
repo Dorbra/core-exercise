@@ -12,7 +12,6 @@ def find_drives():
                 if row[1].strip() == 'Offline':
                     count += 1
 
-                    # specifialy for getting drive_name
                     get_drive_name(row)
 
                     for i in range(2, len(row)):
