@@ -1,4 +1,3 @@
-Outbrain
 core-interview-exercise
 
 **By: Doron Brand**
